@@ -47,7 +47,7 @@ bool IsValidPassword(Password const& p)
   char c = p.letter;
   std::string const& pass = p.password;
 
-  if (pass.length() < first || pass.length() < second)
+  if ((int)pass.length() < first || (int)pass.length() < second)
   {
     return false;
   }
