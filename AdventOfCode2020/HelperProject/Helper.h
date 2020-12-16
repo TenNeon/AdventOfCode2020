@@ -4,7 +4,8 @@
 #include <vector>
 #include <ostream> // ostream
 #include <fstream> // istream
-#include <string> // getline
+#include <string>  // getline
+#include <map>     // map
 
 #ifdef _DEBUG
 #define DEBUG(x) std::cerr << x << std::endl //!< DEBUG print
@@ -15,6 +16,9 @@
 
 namespace Helper
 {
+  typedef std::vector < std::vector<std::string>> vec_vec_str;
+  typedef std::vector<std::string> vec_str;
+  typedef std::map<std::string, std::string> map_str_str;
 
   std::vector<std::string> ParseFile(std::string filename)
   {
@@ -53,4 +57,12 @@ namespace Helper
       std::cout << "Can't open" << filename << std::endl;
     }
   }
+
+  template <class T>
+  bool Between(T const& value, T const& min, T const& max)
+  {
+    return (value >= min && value <= max);
+  }
+
+
 }

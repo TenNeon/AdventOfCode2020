@@ -11,11 +11,14 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "HelperProject", "HelperProj
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Day3", "Day3\Day3.vcxproj", "{194D36E8-B4CD-40E2-86C1-D02062E0442B}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Day4", "Day4\Day4.vcxproj", "{72D17A79-117E-470B-9DC4-21FBD4BF2683}"
+EndProject
 Global
 	GlobalSection(SharedMSBuildProjectFiles) = preSolution
 		HelperProject\HelperProject.vcxitems*{194d36e8-b4cd-40e2-86c1-d02062e0442b}*SharedItemsImports = 4
 		HelperProject\HelperProject.vcxitems*{2807410f-90df-42e4-a563-9a7a8da6250d}*SharedItemsImports = 9
 		HelperProject\HelperProject.vcxitems*{2dd5721c-2ff4-40dd-becc-c177d1852852}*SharedItemsImports = 4
+		HelperProject\HelperProject.vcxitems*{72d17a79-117e-470b-9dc4-21fbd4bf2683}*SharedItemsImports = 4
 		HelperProject\HelperProject.vcxitems*{90e8f87d-ba9a-40f9-842e-0a6e49e166ba}*SharedItemsImports = 4
 	EndGlobalSection
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -49,6 +52,14 @@ Global
 		{194D36E8-B4CD-40E2-86C1-D02062E0442B}.Release|x64.Build.0 = Release|x64
 		{194D36E8-B4CD-40E2-86C1-D02062E0442B}.Release|x86.ActiveCfg = Release|Win32
 		{194D36E8-B4CD-40E2-86C1-D02062E0442B}.Release|x86.Build.0 = Release|Win32
+		{72D17A79-117E-470B-9DC4-21FBD4BF2683}.Debug|x64.ActiveCfg = Debug|x64
+		{72D17A79-117E-470B-9DC4-21FBD4BF2683}.Debug|x64.Build.0 = Debug|x64
+		{72D17A79-117E-470B-9DC4-21FBD4BF2683}.Debug|x86.ActiveCfg = Debug|Win32
+		{72D17A79-117E-470B-9DC4-21FBD4BF2683}.Debug|x86.Build.0 = Debug|Win32
+		{72D17A79-117E-470B-9DC4-21FBD4BF2683}.Release|x64.ActiveCfg = Release|x64
+		{72D17A79-117E-470B-9DC4-21FBD4BF2683}.Release|x64.Build.0 = Release|x64
+		{72D17A79-117E-470B-9DC4-21FBD4BF2683}.Release|x86.ActiveCfg = Release|Win32
+		{72D17A79-117E-470B-9DC4-21FBD4BF2683}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

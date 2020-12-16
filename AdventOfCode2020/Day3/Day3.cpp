@@ -148,7 +148,7 @@ long long unsigned Do3B(Terrain t)
 
 int main()
 {
-  PRINT("Day 2");
+  PRINT("Day 3");
   std::string dataFileName = "Data/input.txt";
   std::string outFileName = "Data/Out.txt";
   std::vector<std::string> lines_str = ParseFile(dataFileName);
