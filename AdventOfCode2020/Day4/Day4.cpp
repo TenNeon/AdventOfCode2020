@@ -26,6 +26,22 @@ struct ID
     return true;
   }
 
+  bool SimpleIsValid() const
+  {
+    for (std::map<std::string, IDValidationFunction>::const_iterator field = validation_map.begin();
+      field != validation_map.end(); field++)
+    {
+      std::string const& fieldName = field->first;
+      if (fieldName != "cid")
+      {
+        bool invalid = fields.find(fieldName) == fields.end();
+        if (invalid) 
+          return false;
+      }
+    }
+    return true;
+  }
+
   //  byr(Birth Year) - four digits; at least 1920 and at most 2002.
   bool ValidBirthYear() const
   {
@@ -189,7 +205,7 @@ int Do4A(std::vector<ID> const& p)
   int result = 0;
   for (size_t i = 0; i < p.size(); i++)
   {
-    result += p[i].IsValid() ? 1 : 0;
+    result += p[i].SimpleIsValid() ? 1 : 0;
   }
   return result;
 }
