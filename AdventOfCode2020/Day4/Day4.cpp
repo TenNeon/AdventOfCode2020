@@ -147,9 +147,9 @@ private:
     {"cid", &ID::ValidCountryID     }
   };
 
-  bool StrDateBetween(std::string const& str, int min, int max) const
+  bool StrDateBetween(std::string const& str_date, int min, int max) const
   {
-    map_str_str::const_iterator found = fields.find(str);
+    map_str_str::const_iterator found = fields.find(str_date);
 
     if (found != fields.end())
     {

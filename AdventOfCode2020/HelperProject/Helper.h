@@ -17,6 +17,7 @@
 namespace Helper
 {
   typedef std::vector < std::vector<std::string>> vec_vec_str;
+  typedef std::string str;
   typedef std::vector<std::string> vec_str;
   typedef std::map<std::string, std::string> map_str_str;
 
