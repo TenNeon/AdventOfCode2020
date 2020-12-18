@@ -1,0 +1,5 @@
+red bags contain 1 blue bag.
+blue bags contain 1 green bag, 1 yellow bag.
+green bags contain 1 yellow bag, 1 shiny gold bag.
+yellow bags contain 1 red bag.
+shiny gold bags contain 1 yellow bag.
