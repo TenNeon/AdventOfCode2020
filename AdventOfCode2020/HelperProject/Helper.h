@@ -19,6 +19,8 @@ namespace Helper
   typedef std::vector < std::vector<std::string>> vec_vec_str;
   typedef std::string str;
   typedef std::vector<std::string> vec_str;
+  typedef std::vector<int> vec_int;
+
   typedef std::map<std::string, std::string> map_str_str;
 
   std::vector<std::string> ParseFile(std::string filename)
@@ -65,5 +67,20 @@ namespace Helper
     return (value >= min && value <= max);
   }
 
+  typedef str AoCPartFunc(vec_str const&);
+  void AoCDay(int day, AoCPartFunc a, AoCPartFunc b, str inputFileName = "Data/input.txt")
+  {
+    PRINT("Day " << day);
+    str outFileName = "Data/Out.txt";
+    vec_str lines_str = ParseFile(inputFileName);
+    std::vector<std::string> lines_out;
 
+    lines_out.push_back(a(lines_str));
+    PRINT("A: " << lines_out[0]);
+
+    lines_out.push_back(b(lines_str));
+    PRINT("B: " << lines_out[1]);
+
+    WriteToFile(lines_out, outFileName);
+  }
 }
