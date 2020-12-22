@@ -4,7 +4,7 @@ using namespace Helper;
 #include <algorithm> // transform
 #include <numeric>  // accumulate
 #include <list>
-typedef long long unsigned ll_int;
+
 typedef std::list<ll_int> list_int;
 
 

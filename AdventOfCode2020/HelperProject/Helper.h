@@ -20,7 +20,7 @@ namespace Helper
   typedef std::string str;
   typedef std::vector<std::string> vec_str;
   typedef std::vector<int> vec_int;
-
+  typedef long long unsigned ll_int;
   typedef std::map<std::string, std::string> map_str_str;
 
   std::vector<std::string> ParseFile(std::string filename)

@@ -3,25 +3,27 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30621.155
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Day1", "Day1\Day1.vcxproj", "{2DD5721C-2FF4-40DD-BECC-C177D1852852}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Day01", "Day1\Day1.vcxproj", "{2DD5721C-2FF4-40DD-BECC-C177D1852852}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Day2", "Day2\Day2.vcxproj", "{90E8F87D-BA9A-40F9-842E-0A6E49E166BA}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Day02", "Day2\Day2.vcxproj", "{90E8F87D-BA9A-40F9-842E-0A6E49E166BA}"
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "HelperProject", "HelperProject\HelperProject.vcxitems", "{2807410F-90DF-42E4-A563-9A7A8DA6250D}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Day3", "Day3\Day3.vcxproj", "{194D36E8-B4CD-40E2-86C1-D02062E0442B}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Day03", "Day3\Day3.vcxproj", "{194D36E8-B4CD-40E2-86C1-D02062E0442B}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Day4", "Day4\Day4.vcxproj", "{72D17A79-117E-470B-9DC4-21FBD4BF2683}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Day04", "Day4\Day4.vcxproj", "{72D17A79-117E-470B-9DC4-21FBD4BF2683}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Day5", "Day5\Day5.vcxproj", "{22A30E93-066D-49C5-BDA8-C227E042FEA0}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Day05", "Day5\Day5.vcxproj", "{22A30E93-066D-49C5-BDA8-C227E042FEA0}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Day6", "Day6\Day6.vcxproj", "{11A77916-8044-4E61-96EE-A23AC2781788}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Day06", "Day6\Day6.vcxproj", "{11A77916-8044-4E61-96EE-A23AC2781788}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Day7", "Day7\Day7.vcxproj", "{6E84BBC3-AD53-4F85-95AD-3F3589A2DFED}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Day07", "Day7\Day7.vcxproj", "{6E84BBC3-AD53-4F85-95AD-3F3589A2DFED}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Day8", "Day8\Day8.vcxproj", "{9F62CB2B-B08D-425D-8D31-C72F934EDF48}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Day08", "Day8\Day8.vcxproj", "{9F62CB2B-B08D-425D-8D31-C72F934EDF48}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Day9", "Day9\Day9.vcxproj", "{90950CEC-7DAA-4FAE-B60E-1574910CF6D0}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Day09", "Day9\Day9.vcxproj", "{90950CEC-7DAA-4FAE-B60E-1574910CF6D0}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Day10", "Day10\Day10.vcxproj", "{33906D71-14D8-4904-99B9-CEDD7C5F6734}"
 EndProject
 Global
 	GlobalSection(SharedMSBuildProjectFiles) = preSolution
@@ -30,6 +32,7 @@ Global
 		HelperProject\HelperProject.vcxitems*{22a30e93-066d-49c5-bda8-c227e042fea0}*SharedItemsImports = 4
 		HelperProject\HelperProject.vcxitems*{2807410f-90df-42e4-a563-9a7a8da6250d}*SharedItemsImports = 9
 		HelperProject\HelperProject.vcxitems*{2dd5721c-2ff4-40dd-becc-c177d1852852}*SharedItemsImports = 4
+		HelperProject\HelperProject.vcxitems*{33906d71-14d8-4904-99b9-cedd7c5f6734}*SharedItemsImports = 4
 		HelperProject\HelperProject.vcxitems*{6e84bbc3-ad53-4f85-95ad-3f3589a2dfed}*SharedItemsImports = 4
 		HelperProject\HelperProject.vcxitems*{72d17a79-117e-470b-9dc4-21fbd4bf2683}*SharedItemsImports = 4
 		HelperProject\HelperProject.vcxitems*{90950cec-7daa-4fae-b60e-1574910cf6d0}*SharedItemsImports = 4
@@ -115,6 +118,14 @@ Global
 		{90950CEC-7DAA-4FAE-B60E-1574910CF6D0}.Release|x64.Build.0 = Release|x64
 		{90950CEC-7DAA-4FAE-B60E-1574910CF6D0}.Release|x86.ActiveCfg = Release|Win32
 		{90950CEC-7DAA-4FAE-B60E-1574910CF6D0}.Release|x86.Build.0 = Release|Win32
+		{33906D71-14D8-4904-99B9-CEDD7C5F6734}.Debug|x64.ActiveCfg = Debug|x64
+		{33906D71-14D8-4904-99B9-CEDD7C5F6734}.Debug|x64.Build.0 = Debug|x64
+		{33906D71-14D8-4904-99B9-CEDD7C5F6734}.Debug|x86.ActiveCfg = Debug|Win32
+		{33906D71-14D8-4904-99B9-CEDD7C5F6734}.Debug|x86.Build.0 = Debug|Win32
+		{33906D71-14D8-4904-99B9-CEDD7C5F6734}.Release|x64.ActiveCfg = Release|x64
+		{33906D71-14D8-4904-99B9-CEDD7C5F6734}.Release|x64.Build.0 = Release|x64
+		{33906D71-14D8-4904-99B9-CEDD7C5F6734}.Release|x86.ActiveCfg = Release|Win32
+		{33906D71-14D8-4904-99B9-CEDD7C5F6734}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
