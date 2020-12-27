@@ -40,7 +40,7 @@ str DoPartA(vec_str const& input_raw)
 
 ll_int countPaths(vec_int const& nodes, std::vector<ll_int> & counts, int nodeIndex)
 {
-  if (nodeIndex >= nodes.size())
+  if (nodeIndex >= (int)nodes.size())
   {
     return 0;
   }
@@ -60,7 +60,7 @@ ll_int countPaths(vec_int const& nodes, std::vector<ll_int> & counts, int nodeIn
     for (size_t j = i; j > 0; --j)
     {
       int nextIndex = nodeIndex + j;
-      bool hasNextValue = nextIndex < nodes.size() && nodes[nextIndex] == nextValue;
+      bool hasNextValue = nextIndex < (int)nodes.size() && nodes[nextIndex] == nextValue;
       if (hasNextValue)
       {
         this_count += counts[nextIndex] > 0 ? counts[nextIndex] : countPaths(nodes, counts, nextIndex);

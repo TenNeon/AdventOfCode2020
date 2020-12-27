@@ -14,6 +14,9 @@
 #endif
 #define PRINT(x) std::cout << x << std::endl;
 
+constexpr float PI = 3.14159f;
+constexpr float HALF_PI = 1.57079632679f;
+
 namespace Helper
 {
   typedef std::vector < std::vector<std::string>> vec_vec_str;
@@ -22,6 +25,51 @@ namespace Helper
   typedef std::vector<int> vec_int;
   typedef long long unsigned ll_int;
   typedef std::map<std::string, std::string> map_str_str;
+  
+  struct vec2
+  {
+    float x = 0;
+    float y = 0;
+
+    vec2(float a = 0, float b = 0) : x(a), y(b) {}
+
+    vec2 operator+(vec2 const& other) const { return vec2(x+other.x, y+other.y); }
+    vec2 operator-(vec2 const& other) const { return vec2(x-other.x, y-other.y); }
+    vec2 operator+=(vec2 const& other) { x += other.x; y += other.y; return *this; }
+    vec2 operator-=(vec2 const& other) { x -= other.x; y -= other.y; return *this; }
+    bool operator==(vec2 const& other) const { return other.x == x && other.y == y; }
+    vec2 operator*(vec2 const& other) const { return vec2(x * other.x, y * other.y); }
+    vec2 operator*(int scale) const { return vec2(x * scale, y * scale); }
+
+    float Length() const
+    {
+      return std::sqrt(x*x + y*y);
+    }
+
+    vec2& Normalize()
+    {
+      float len = Length();
+      if (len != 0)
+      {
+        x /= len;
+        y /= len;
+      }
+      else
+      {
+        x = 0;
+        y = 0;
+      }
+      return *this;
+    }
+
+    vec2 Normalized() const
+    {
+      float len = Length();
+      return vec2(x / len, y / len);
+    }
+  };
+
+  vec2 operator*(int scale, vec2 const& a) { return vec2(a.x * scale, a.y * scale); }
 
   std::vector<std::string> ParseFile(std::string filename)
   {
