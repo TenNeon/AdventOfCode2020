@@ -6,6 +6,9 @@
 #include <fstream> // istream
 #include <string>  // getline
 #include <map>     // map
+#include <regex>   // sregex_token_iterator 
+#include <numeric> // limits
+
 
 #ifdef _DEBUG
 #define DEBUG(x) std::cerr << x << std::endl //!< DEBUG print
@@ -114,6 +117,15 @@ namespace Helper
   {
     return (value >= min && value <= max);
   }
+
+  // Simple strtok wrapper
+  vec_str Tokenize(str string, const std::regex regex = std::regex(R"([\s|,]+)")) // defaults to space and comma
+  {
+    std::sregex_token_iterator itr{ string.begin(), string.end(), regex, -1 };
+    std::vector<std::string> tokenized{ itr, {} };
+    return tokenized;
+  }
+
 
   typedef str AoCPartFunc(vec_str const&);
   void AoCDay(int day, AoCPartFunc a, AoCPartFunc b, str inputFileName = "Data/input.txt")
